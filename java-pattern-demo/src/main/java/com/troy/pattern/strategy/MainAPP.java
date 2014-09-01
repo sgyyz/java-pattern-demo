@@ -12,7 +12,7 @@ public class MainAPP {
 		// 1. using the credit card pay the items.
 		cart.pay(new CreditCardPayment("BCC", "5855885669844", "694", "12/16"));
 		
-		// 2. using teh Paypal to pay the items
+		// 2. using the Paypal to pay the items
 		cart.pay(new PaypalPayment("example@example.com", "123456"));
 	}
 }
