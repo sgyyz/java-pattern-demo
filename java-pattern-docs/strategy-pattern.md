@@ -9,7 +9,7 @@ In many cases we should handle our logic within the core class, we may use the `
 
 Think about it, if we add more than one payment way, or if we change the logic in the pay method, we may change more code in different class. And it's not match the `OO` design - **high cohesion** and **low coupling**, so the **Strategy Pattern** is born.
 
-**Note: ** *Java Pattern don't suit the controller logic in the JEE, but the original controller may suit the Java Pattern, so don't use this point to explain the logic in your controller*
+**Note**:*Java Pattern don't suit the controller logic in the JEE, but the original controller may suit the Java Pattern, so don't use this point to explain the logic in your controller*
 
 ###Example of Payment
 
