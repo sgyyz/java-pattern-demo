@@ -17,6 +17,8 @@ In most sales Websites, it supports different ways after you choose your things.
 
 Above are the **Strategy Pattern** core part. After these finished, we can define the `Item` class and `ShoppingCart` to simulate the shopping process. Especially, in the `ShoppingCart`, there is a method `pay(PaymentStrategy strategy)` to invoke the `pay(int amount)` method. Here you can see, that we just pass the implementation class of `PaymentStrategy`, and the `ShoppingCart`'s `pay(PaymentStrategy strategy)` ignore the implementation.
 
+For more details, please reference the [source code](https://github.com/sgyyz/java-pattern-demo/tree/master/java-pattern-demo).
+
 ###Conclude
 
 In the example, we can find that we had done the **high cohesion** and **low coupling**. In the future, if there need to add more payment ways, we just create the implementation class of `PaymentStrategy`, and when we should use this payment way, just pass its instance to `ShoppingCart`'s `pay(PaymentStrategy strategy)`.
