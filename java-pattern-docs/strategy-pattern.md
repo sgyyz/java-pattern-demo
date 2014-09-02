@@ -6,7 +6,7 @@ This document explains what is the strategy pattern and shows a common example t
 
 The **Strategy Pattern** is a pattern to handle the different logic when handle the same question. Such as the payment after you buy things.
 
->>Defines a set of encapsulated algorithms that can be swapped to carry out a specific behaviour.
+>Defines a set of encapsulated algorithms that can be swapped to carry out a specific behaviour.
 
 In many cases we should handle our logic within the core class, we may use the `switch` or the `if...else` to do these things. But as our business domain or the logic expand, we should add more different ways to handle the same question, such as the payment by using Credit Card, Paypal and other payment ways. As usual, we may define a `PaymentOperation` class to handle the different payment methods by using `switch` or `if...else`. And add the logic in the `switch` or in the `if...else` block.This is the common way.
 
