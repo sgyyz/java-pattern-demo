@@ -26,3 +26,33 @@ Singleton pattern can create the object itself exclusively in the memory, means 
 
 ###Reference
 *You can reference the thread safety singleton demo in the package which used the JLS to ensure the thread safety.*
+
+```java
+public class ThreadSafeSingleton {
+	
+	/**
+	 * Also use the private to decorated the constructor.
+	 */
+	private ThreadSafeSingleton() {
+		
+	}
+	
+	/**
+	 * The static inner class can ensure the it's unique by the JLS.
+	 * @author troyyang
+	 *
+	 */
+	private static class SingletonHolder {
+		// ensure this instance can't be changed.
+		public static final ThreadSafeSingleton _INSTANCE = new ThreadSafeSingleton();
+	}
+	
+	/**
+	 * The access method
+	 * @return
+	 */
+	public static ThreadSafeSingleton getInstance() {
+		return SingletonHolder._INSTANCE;
+	}
+}
+```
