@@ -15,9 +15,9 @@ In this example, it will simulate the Button add Listener. To match the `OO` pri
 ####Subject
 It's a set of common things. So we define the common subject as an abstract class will be better. 
 * First define an abstract class named `Component`. 
-* In this class, we should define a list to store the **Observer**s. Like the `JButton`, it can add and remove the **Observer**s. So define `addListener()`, `removeListener` two methods to handle these function. Cause all the `Component`s have the two methods, so add the method body in the functions.
-* When the `Component` changes it status or need notify the **Observer**s, it should call the **Observer**'s action method. So here we define a method named `doAction()`.
-* The subclass of `Component` will implement `doAction()` to call the actions you should do in the **Observer**s.
+* In this class, we should define a list to store the Observers. Like the `JButton`, it can add and remove the Observers. So define `addListener()`, `removeListener` two methods to handle these function. Cause all the `Component`s have the two methods, so add the method body in the functions.
+* When the `Component` changes it status or need notify the Observers, it should call the Observer's action method. So here we define a method named `doAction()`.
+* The subclass of `Component` will implement `doAction()` to call the actions you should do in the Observers.
 
 ####Observer
 It's the role which should performance the actions when the **Subject** changed its status.
