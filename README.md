@@ -8,5 +8,5 @@ Below are the patterns, please refernce:
 * [Observer Pattern](https://github.com/sgyyz/java-pattern-demo/blob/master/java-pattern-docs/observer-pattern.md)
 
 
-###Statement
+### Statement
 These pattern design demo will be continue update, welcome anyone to join me, you can contact me by email: itnote.yyz@gmail.com.
